@@ -34,9 +34,7 @@
                                                                        partnerId:@"2031091"];
         // Video Entry
         config.entryId = @"0_7v0pr7gm";
-        
-        [config addConfigKey:@"doubleClick.plugin" withValue:@"true"];
-        
+            
         // Setting this property will cache the html pages in the limit size
         config.cacheSize = 100;
         _player = [[KPViewController alloc] initWithConfiguration:config];
