@@ -1,0 +1,7 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'KChromecastDemo' do
+    pod "KalturaPlayerSDK"
+    pod "GoogleAds-IMA-iOS-SDK" , "~> 3.1.0"
+end
