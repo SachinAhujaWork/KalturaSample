@@ -56,8 +56,12 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    //Present view controller - Fullscreen view
-    [self presentViewController:self.player animated:YES completion:nil];
+    
+    // Adding player as subview
+    CGRect frame = self.player.view.frame;
+    frame.origin.y = 40.0;
+    self.player.view.frame = frame;
+    [self.view addSubview:self.player.view];
 }
 
 @end
