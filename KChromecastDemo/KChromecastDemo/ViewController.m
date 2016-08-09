@@ -45,8 +45,9 @@
                action:@selector(changeMedia)
      forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"Change Media" forState:UIControlStateNormal];
-    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
-    [_player.view addSubview:button];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.frame = CGRectMake(80.0, 10.0, 160.0, 40.0);
+    [self.view addSubview:button];
     return _player;
 }
 
@@ -59,7 +60,7 @@
     
     // Adding player as subview
     CGRect frame = self.player.view.frame;
-    frame.origin.y = 40.0;
+    frame.origin.y = 50.0;
     self.player.view.frame = frame;
     [self.view addSubview:self.player.view];
 }
