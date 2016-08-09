@@ -58,10 +58,13 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    // Adding player as subview
+    // Setting player frame
     CGRect frame = self.player.view.frame;
     frame.origin.y = 50.0;
     self.player.view.frame = frame;
+    
+    // Adding player as subview
+    [self.player loadPlayerIntoViewController:self];
     [self.view addSubview:self.player.view];
 }
 
