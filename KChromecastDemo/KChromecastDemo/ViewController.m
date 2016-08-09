@@ -35,6 +35,8 @@
         // Video Entry
         config.entryId = @"0_7v0pr7gm";
         
+        [config addConfigKey:@"doubleClick.plugin" withValue:@"true"];
+        
         // Setting this property will cache the html pages in the limit size
         config.cacheSize = 100;
         _player = [[KPViewController alloc] initWithConfiguration:config];
@@ -46,7 +48,7 @@
      forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"Change Media" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    button.frame = CGRectMake(80.0, 10.0, 160.0, 40.0);
+    button.frame = CGRectMake(10.0, 10.0, 160.0, 40.0);
     [self.view addSubview:button];
     return _player;
 }
