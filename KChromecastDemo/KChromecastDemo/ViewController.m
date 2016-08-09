@@ -34,7 +34,7 @@
                                                                        partnerId:@"2031091"];
         // Video Entry
         config.entryId = @"0_7v0pr7gm";
-            
+        
         // Setting this property will cache the html pages in the limit size
         config.cacheSize = 100;
         _player = [[KPViewController alloc] initWithConfiguration:config];
@@ -61,6 +61,7 @@
     // Setting player frame
     CGRect frame = self.player.view.frame;
     frame.origin.y = 50.0;
+    frame.size.height = frame.size.height - 50;
     self.player.view.frame = frame;
     
     // Adding player as subview
